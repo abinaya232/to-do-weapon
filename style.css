@@ -1,0 +1,134 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(bg2.jpg);
+    background-color: #f9f9f9;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(135, 17, 219);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo{
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #e6e4ee;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#taskbtn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e68208;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#taskbtn:hover {
+    background-color: #0056b3;
+}
+
+#todolist {
+    list-style: none;
+    padding: 0;
+}
+.edit-btn {
+    margin-left: 5px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+
+
+#todolist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+.task-text {
+    cursor: pointer;
+    flex: 1;
+}
+
+.task-text.completed {
+    text-decoration: line-through; 
+    color: green; 
+    font-weight: bold;
+}
+
+.task-text.completed::after {
+    content: ' ✔'; 
+    color: green;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+#progress {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #16f460;
+}
